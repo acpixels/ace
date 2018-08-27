@@ -95,58 +95,58 @@ const Dashboard = props => {
           <div className="row">
             <div className="card card-width ml-3">
               <div className="card-body">
-                <h6 className="font-weight-light">CAVS | Cost Analysis Valuation System</h6>
-                <p>Application utilized by local muncipalities to process non-filing taxpayers.
+                <h6 className="font-weight-bold primary mb-3">CAVS | Cost Analysis Valuation System</h6>
+                <p className="mb-0">Application utilized by local muncipalities to process non-filing taxpayers.
                 </p>
               </div>
-              <div className="card-footer">
-                <a href="#cavs" id="cavs" role="button" data-toggle="modal" data-target="#cavs">View</a>
+              <div className="card-footer bg-secondary">
+                <a href="#cavs" id="cavs" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#cavs">View</a>
               </div>
             </div>
             <div className="card card-width">
               <div className="card-body">
-                <h6 className="font-weight-light">SSO | Single Sign On Platform</h6>
-                <p>Authentication and Single Sign On Platform</p>
+                <h6 className="font-weight-bold primary mb-3">SSO | Single Sign On Platform</h6>
+                <p className="mb-0">Authentication and Single Sign On Platform</p>
               </div>
-              <div className="card-footer">
-                <a href="#sso" id="sso" role="button" data-toggle="modal" data-target="#sso">View</a>
+              <div className="card-footer bg-secondary">
+                <a href="#sso" id="sso" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#sso">View</a>
               </div>
             </div>
             <div className="card card-width mr-0">
               <div className="card-body">
-                <h6 className="font-weight-light">Taxscribe | Online Tax Filing System</h6>
-                <p>Online service to file business personal property taxes.</p>
+                <h6 className="font-weight-bold primary mb-3">Taxscribe | Online Tax Filing System</h6>
+                <p className="mb-0">Online service to file business personal property taxes.</p>
               </div>
-              <div className="card-footer">
-                <a href="#taxscribe" id="taxscribe" role="button" data-toggle="modal" data-target="#taxscribe">View</a>
+              <div className="card-footer bg-secondary">
+                <a href="#taxscribe" id="taxscribe" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#taxscribe">View</a>
               </div>
             </div>
             <div className="card card-width ml-3">
               <div className="card-body">
-                <h6 className="font-weight-light">Jenna Wagner Racing</h6>
-                <p>Race Car Driver Autograph Card
+                <h6 className="font-weight-bold primary mb-3">Jenna Wagner Racing</h6>
+                <p className="mb-0">Race Car Driver Autograph Card
                 </p>
               </div>
-              <div className="card-footer">
-                <a href="#cavs" id="cavs" role="button" data-toggle="modal" data-target="#cavs">View</a>
+              <div className="card-footer bg-secondary">
+                <a href="#cavs" id="cavs" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#cavs">View</a>
               </div>
             </div>
             <div className="card card-width">
               <div className="card-body">
-                <h6 className="font-weight-light">Fox Sports | Fantasy Bid</h6>
-                <p>Digital Streaming Experience</p>
+                <h6 className="font-weight-bold primary mb-3">Fox Sports | Fantasy Bid</h6>
+                <p className="mb-0">Digital Streaming Experience</p>
               </div>
-              <div className="card-footer">
-                <a href="#sso" id="sso" role="button" data-toggle="modal" data-target="#sso">View</a>
+              <div className="card-footer bg-secondary">
+                <a href="#sso" id="sso" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#sso">View</a>
               </div>
             </div>
             <div className="card card-width mr-0">
               <div className="card-body">
-                <h6 className="font-weight-light">SPEED.com | Marketing Campaigns</h6>
-                <p>Marketing Campaigns</p>
+                <h6 className="font-weight-bold primary mb-3t">SPEED.com | Marketing Campaigns</h6>
+                <p className="mb-0">Marketing Campaigns</p>
               </div>
-              <div className="card-footer">
-                <a href="#taxscribe" id="taxscribe" role="button" data-toggle="modal" data-target="#taxscribe">View</a>
+              <div className="card-footer bg-secondary">
+                <a href="#taxscribe" id="taxscribe" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#taxscribe">View</a>
               </div>
             </div>
           </div>
@@ -159,32 +159,22 @@ const Dashboard = props => {
         <div className="col-12">
           <br/>
           <h3 className="display-3 text-center">
-            She's got&nbsp;<span className="secondary font-italic">Clients</span>.</h3>
+            I'm really just a&nbsp;
+            <span className="secondary font-italic">problem solver</span>...
+          </h3>
           <br/>
         </div>
       </div>
-      <section id="clients container-fluid">
+      <section id="about container-fluid">
         <div className="container">
-          <div className="row">
-            <div className="col-sm-2">
-              <img src={cavsLogo} class="rounded clients mx-auto img-fluid d-block img-responsive" alt="..."/>
+          <section id="about">
+            <div className="row">
+              <div className="col-lg-12 col-md-12 col-sm-12">
+                <p className="display-4">Raised off a rural two-lane Historyland Highway, squeezed between the Rappahanock and Potomac rivers, ending at the Chesapeake Bay, in the Northern Neck of Virginia.</p>
+                <p className="display-4">For work, I drive the User Experience and Interactions from concept to release with a goal of shipping easy to use experiences.</p>
+              </div>
             </div>
-            <div className="col-sm-2">
-              <img src={cavsLogo} class="rounded clients mx-auto img-fluid d-block img-responsive" alt="..."/>
-            </div>
-            <div className="col-sm-2">
-              <img src={cavsLogo} class="rounded clients mx-auto img-fluid d-block img-responsive" alt="..."/>
-            </div>
-            <div className="col-sm-2">
-              <img src={cavsLogo} class="rounded clients mx-auto img-fluid d-block img-responsive" alt="..."/>
-            </div>
-            <div className="col-sm-2">
-              <img src={cavsLogo} class="rounded clients mx-auto img-fluid d-block img-responsive" alt="..."/>
-            </div>
-            <div className="col-sm-2">
-              <img src={cavsLogo} class="rounded clients mx-auto img-fluid d-block img-responsive" alt="..."/>
-            </div>
-          </div>
+          </section>
         </div>
       </section>
     </div> */
@@ -196,24 +186,30 @@ const Dashboard = props => {
           <br/>
           <h3 className="display-3 text-center">
             I'm really just a&nbsp;
-            <span className="secondary font-italic">problem solver</span>...
-          </h3>
+            <span className="secondary font-italic">problem solver</span>...</h3>
           <br/>
         </div>
       </div>
-      {/* <section id="about container-fluid">
+      <br/>
+      <br/>
+      <section id="clients container-fluid">
         <div className="container">
-          <section id="about">
-            <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <p className="display-4">Raised off a rural two-lane Historyland Highway, squeezed between the Rappahanock and Potomac rivers, ending at the Chesapeake Bay, in the Northern Neck of Virginia.</p>
-                <p className="display-4">For work, I drive the User Experience and Interactions from concept to release with a goal of shipping easy to use experiences.</p>
-              </div>
+          <div className="row justify-content-center">
+            <div className="col-sm-12 col-lg-3 col-sm-3 text-center">
+              <i className="fas fa-futbol fa-7x"></i>
+              <h3 className="display-5 text-center pt-3">who likes soccer,</h3>
             </div>
-          </section>
+            <div className="col-sm-12 col-lg-3 col-sm-3 text-center">
+              <i className="fas fa-anchor fa-7x"></i>
+              <h3 className="display-5 text-center pt-3">sandy beaches</h3>
+            </div>
+            <div className="col-sm-12 col-lg-3 col-sm-3 text-center">
+              <i className="fas fa-headphones fa-7x"></i>
+              <h3 className="display-5 text-center pt-3">and chill tunes.</h3>
+            </div>
+          </div>
         </div>
-      </section> */
-      }
+      </section>
     </div>
   </div>);
 }
