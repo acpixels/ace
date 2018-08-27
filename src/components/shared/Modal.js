@@ -15,10 +15,11 @@ class Modal extends React.Component {
       confirmText,
       handleSend,
       modalWidth,
-      modalTitle
+      modalTitle,
+      id
     } = this.props;
 
-    return (<div className="modal fade" id="modal" tabIndex="-1" role="dialog" aria-hidden="true">
+    return (<div className="modal fade" id="${id}" tabIndex="-1" role="dialog" aria-hidden="true">
       <div className={`modal-dialog modal-dialog-centered ${modalWidth}`} role="document">
         <div className="modal-content">
           <div className="modal-header">
