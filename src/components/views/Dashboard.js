@@ -8,6 +8,8 @@ import cavsLogo from './../../img/cavs-logo.png'
 
 const Dashboard = props => {
 
+  $('.carousel').carousel()
+
   return (<div id="portfolio" className="mt-4">
     <header>
       <div id="intro">
@@ -100,7 +102,7 @@ const Dashboard = props => {
                 </p>
               </div>
               <div className="card-footer bg-secondary">
-                <a href="#cavs" id="cavs" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#cavs">View</a>
+                <a href="#cavs" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#cavsModal">View</a>
               </div>
             </div>
             <div className="card card-width">
@@ -109,7 +111,7 @@ const Dashboard = props => {
                 <p className="mb-0">Authentication and Single Sign On Platform</p>
               </div>
               <div className="card-footer bg-secondary">
-                <a href="#sso" id="sso" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#sso">View</a>
+                <a href="#sso" id="sso" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#ssoModal">View</a>
               </div>
             </div>
             <div className="card card-width mr-0">
@@ -118,7 +120,7 @@ const Dashboard = props => {
                 <p className="mb-0">Online service to file business personal property taxes.</p>
               </div>
               <div className="card-footer bg-secondary">
-                <a href="#taxscribe" id="taxscribe" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#taxscribe">View</a>
+                <a href="#taxscribe" id="taxscribe" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#taxscribeModal">View</a>
               </div>
             </div>
             <div className="card card-width ml-3">
@@ -128,7 +130,7 @@ const Dashboard = props => {
                 </p>
               </div>
               <div className="card-footer bg-secondary">
-                <a href="#cavs" id="cavs" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#cavs">View</a>
+                <a href="#cavs" id="cavs" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#jwracingModal">View</a>
               </div>
             </div>
             <div className="card card-width">
@@ -137,7 +139,7 @@ const Dashboard = props => {
                 <p className="mb-0">Digital Streaming Experience</p>
               </div>
               <div className="card-footer bg-secondary">
-                <a href="#sso" id="sso" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#sso">View</a>
+                <a href="#sso" id="sso" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#fbModal">View</a>
               </div>
             </div>
             <div className="card card-width mr-0">
@@ -146,7 +148,7 @@ const Dashboard = props => {
                 <p className="mb-0">Marketing Campaigns</p>
               </div>
               <div className="card-footer bg-secondary">
-                <a href="#taxscribe" id="taxscribe" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#taxscribe">View</a>
+                <a href="#taxscribe" id="taxscribe" className="text-white text-uppercase" role="button" data-toggle="modal" data-target="#speedModal">View</a>
               </div>
             </div>
           </div>
@@ -180,37 +182,83 @@ const Dashboard = props => {
     </div> */
     }
     <hr className="mx-3"></hr>
-    <div className="container-fluid py-4">
-      <div className="row">
-        <div className="col-12">
-          <br/>
-          <h3 className="display-3 text-center">
-            I'm really just a&nbsp;
-            <span className="secondary font-italic">problem solver</span>...</h3>
-          <br/>
-        </div>
-      </div>
-      <br/>
-      <br/>
-      <section id="clients container-fluid">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-sm-12 col-lg-3 col-sm-3 text-center">
-              <i className="fas fa-futbol fa-7x"></i>
-              <h3 className="display-5 text-center pt-3">who likes soccer,</h3>
-            </div>
-            <div className="col-sm-12 col-lg-3 col-sm-3 text-center">
-              <i className="fas fa-anchor fa-7x"></i>
-              <h3 className="display-5 text-center pt-3">sandy beaches</h3>
-            </div>
-            <div className="col-sm-12 col-lg-3 col-sm-3 text-center">
-              <i className="fas fa-headphones fa-7x"></i>
-              <h3 className="display-5 text-center pt-3">and chill tunes.</h3>
-            </div>
+      <div className="container-fluid py-4">
+        <div className="row">
+          <div className="col-12">
+            <br/>
+            <h3 className="display-3 text-center">
+              I'm really just a&nbsp;
+              <span className="secondary font-italic">creative problem solver</span>...</h3>
+            <br/>
           </div>
         </div>
-      </section>
-    </div>
+        <br/>
+        <br/>
+        <section id="clients container-fluid">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-sm-12 col-lg-3 col-sm-3 text-center">
+                <i className="fas fa-futbol fa-7x"></i>
+                <h3 className="display-5 text-center pt-3">who likes soccer,</h3>
+              </div>
+              <div className="col-sm-12 col-lg-3 col-sm-3 text-center">
+                <i className="fas fa-anchor fa-7x"></i>
+                <h3 className="display-5 text-center pt-3">sandy beaches</h3>
+              </div>
+              <div className="col-sm-12 col-lg-3 col-sm-3 text-center">
+                <i className="fas fa-headphones fa-7x"></i>
+                <h3 className="display-5 text-center pt-3">and chill tunes.</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      {/* <a href={`#cavs`} data-toggle={'modal'} data-target={`#modal${id}`} role='button'>{ftpDataSentOn || 'Select Date'}</a> */
+    }
+    <Modal id="cavsModal" modalTitle="CAVS | Cost Analysis Valuation" modalWidth="cavsModal">
+      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img className="d-block w-100" src="..." alt="First slide"/></div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="..." alt="Second slide"/></div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="..." alt="Third slide"/></div>
+        </div>
+        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </div>
+    </Modal>
+    <Modal id="ssoModal" modalTitle="SSO | Cost Analysis Valuation" modalWidth="cavsModal">
+      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img className="d-block w-100" src={ssoHome} alt="First slide"/></div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="..." alt="Second slide"/></div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="..." alt="Third slide"/></div>
+        </div>
+        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </div>
+    </Modal>
+    <Modal id="taxscribeModal" modalTitle="TaxScribe | Cost Analysis Valuation" modalWidth="cavsModal">test</Modal>
+    <Modal id="jwracingModal" modalTitle="Jenna Wagner Racing | Cost Analysis Valuation" modalWidth="cavsModal">test</Modal>
+    <Modal id="fbModal" modalTitle="Fox Sports Fantasty Bid | Cost Analysis Valuation" modalWidth="cavsModal">test</Modal>
+    <Modal id="speedModal" modalTitle="SPEED | Cost Analysis Valuation" modalWidth="cavsModal">test</Modal>
   </div>);
 }
 

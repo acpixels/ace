@@ -279,3 +279,7 @@ footer a:visited {
   background-color: transparent !important;
   box-shadow: none! important;
 } */
+
+cavsModal {
+  width: 700px;
+}
