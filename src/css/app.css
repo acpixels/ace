@@ -231,8 +231,8 @@ footer a:visited {
         transform: rotate(0deg);
     }
     100%{
-        -webkit-transform: rotate(144deg);
-        transform: rotate(144deg);
+        -webkit-transform: rotate(155deg);
+        transform: rotate(155deg);
     }
 }
 @keyframes loading-3{

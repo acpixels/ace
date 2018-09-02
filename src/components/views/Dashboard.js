@@ -40,7 +40,7 @@ const Dashboard = props => {
             <span className="progress-right">
               <span className="progress-bar"></span>
             </span>
-            <div className="progress-value">90%</div>
+            <div className="progress-value">95%</div>
           </div>
           <p className="text-center pt-3">User Experience</p>
         </div>

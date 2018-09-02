@@ -6,15 +6,15 @@ const Footer = () => {
 
   return (<footer>
     <div className="container-fluid">
-      <div className="row">
-        <div className="col-4">&nbsp;</div>
-        <div className="col-4">
+      <div className="row pt-4">
+        <div className="col-lg-4 col-sm-12">&nbsp;</div>
+        <div className="col-lg-4 col-sm-12">
           <p className="primary text-uppercase">Copyright &#169; {currentYear}
             &nbsp; Anne Ervin
           </p>
         </div>
-        <div className="col-4">
-          <ul className="list-unstyled list-inline float-right">
+        <div className="col-lg-4 col-sm-12">
+          <ul className="list-unstyled list-inline text-md-right text-sm-center">
             <li className="list-inline-item">
               <a href="https://github.com/acpixels" target="_blank">
                 <i className="fab fa-github fa-2x text-dark"></i>
